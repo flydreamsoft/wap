@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.clear:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.left{
+				float: left;
+			}
+			.right{
+				float: right;
+			}
+			html {
+				font-size: calc(100vw/6.4);
+			}
+			
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			a{ text-decoration: none; color: #333333;}
+			p{ margin: 0; padding: 0;}
+			.top {
+				width: 100%;
+				height: 0.9rem;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 999;
+				border-bottom: 1px solid #BFBFBF;
+				background-color: #efefef;
+				background-image: linear-gradient(to top, #efefef, #ffffff);
+			}
+			.top .back{
+				float: left;
+				display: block;
+				width: 0.24rem;
+				height: 0.4rem;
+				margin-bottom: 0.27rem;
+				padding-left:0.31rem ;
+				position: absolute;
+				top: -0.25rem;
+				
+			}
+			.back img{
+				width: inherit;
+				height: inherit;
+			}
+			.top b{
+				
+				display: block;
+				width: 0.35rem;
+				height: 0.36rem;
+				position: absolute;
+				top: -0.27rem;
+				right: 0;
+				padding-right:10px;
+				
+			}
+			.top b img{
+				width: inherit;
+				height: inherit;
+			}
+			.top input{
+				width: 4.58rem;
+				height: 0.6rem;
+				position: absolute;
+				top: 0.15rem;
+				left: 0.75rem;
+				border-radius: 0.5rem;
+				border: 1px solid #D5D5D5;
+				color: #D5D5D5;
+				padding-left: 0.2rem;
+				outline: none;
+			}
+			.content {
+				padding-top: 0.9rem;
+				height: 100vh;
+				box-sizing: border-box;
+				background-color: #f3f5f7;
+				overflow: hidden;
+				
+			}
+			
+			.category {
+				height: inherit;
+				width: 1.5rem;
+				font-size: 0.2rem;
+				line-height: 0.9rem;
+				text-align: center;
+				position: relative;
+			}
+			
+			.category ul {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				list-style: none;
+				background-color: white;
+				border-right: solid 1px #e5e5e5;
+				position: absolute;
+				top: 0px;
+				left: 0;
+			}
+			
+			.category ul li {
+				border-bottom: solid 1px #e5e5e5;
+				
+			}
+			.category ul li.active {
+				background-color: #F3F5F7;
+				
+				
+			}
+			.category ul li.active a{
+				color: red;
+				
+				
+			}
+			.category a {
+				color: #232323;
+				text-decoration: none;
+			}
+			
+			.list{
+				height: inherit;
+				width: 4.62rem;
+				font-size: 0.2rem;
+				position: absolute;
+				left: 1.5rem;
+				top: 0.2rem;
+				margin-left: 0.18rem;
+				/*background-color: red;*/
+				
+			}
+			
+			
+			.list-sun{ width: 100%; position: absolute; top: 0; left: 0; }
+			
+			
+			.banner{ width: 100%; height: 1.57rem;}
+			/*.banner a{ display: inline-block; width: 100%; height: 1.57rem; }*/
+			.banner img{ width: 4.62; height: 1.57rem;}
+			.dome-list{width: 100%; margin-top: 2rem; }
+			.dome{ width: 100%; margin-top: 0.31rem; }
+			.dome span.dome-title{display: block; margin-top: 0.31rem; }
+			
+			.dome dl{ width: 100%; padding-top: 0.15rem;  background-color: white;}
+			.dome dl dd{ float: left; width: 1rem; margin: 0 0.27rem; text-align: center;}
+			.dome dl dd a{ display: block; width: inherit; height: inherit;}
+			.dome dl dd a img{ width: 1rem; height: 1rem; }
+			.dome dl dd a p{ line-height: 0.3rem;}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="top clear">
+			<span class="back left"><img src="img/back.jpg"/></span>
+			<input class="left" type="text" name="" id="" value="小天鹅洗衣机" />
+			<b class="right"><img src="img/news.png"/></b>
+
+		</div>
+
+		<div class="content ">
+			<div class="category ">
+				<ul>
+					<li>
+						<a href="#">热门推荐</a>
+					</li>
+					<li>
+						<a href="#">京东超市</a>
+					</li>
+					<li>
+						<a href="#">手机</a>
+					</li>
+					<li>
+						<a href="#">平板</a>
+					</li>
+					<li>
+						<a href="#">电脑</a>
+					</li>
+					<li>
+						<a href="#">服装</a>
+					</li>
+					<li>
+						<a href="#">食品</a>
+					</li>
+					<li>
+						<a href="#">热门推荐</a>
+					</li>
+					<li>
+						<a href="#">京东超市</a>
+					</li>
+					<li>
+						<a href="#">手机</a>
+					</li>
+					<li>
+						<a href="#">平板</a>
+					</li>
+					<li>
+						<a href="#">电脑</a>
+					</li>
+					<li>
+						<a href="#">服装</a>
+					</li>
+					<li>
+						<a href="#">食品</a>
+					</li>
+					<li>
+						<a href="#">热门推荐</a>
+					</li>
+					<li>
+						<a href="#">京东超市</a>
+					</li>
+					<li>
+						<a href="#">手机</a>
+					</li>
+					<li>
+						<a href="#">平板</a>
+					</li>
+					<li>
+						<a href="#">电脑</a>
+					</li>
+					<li>
+						<a href="#">服装</a>
+					</li>
+					<li>
+						<a href="#">食品</a>
+					</li>
+					<li>
+						<a href="#">热门推荐</a>
+					</li>
+					<li>
+						<a href="#">京东超市</a>
+					</li>
+					<li>
+						<a href="#">手机</a>
+					</li>
+					<li>
+						<a href="#">平板</a>
+					</li>
+					<li>
+						<a href="#">电脑</a>
+					</li>
+					<li>
+						<a href="#">服装</a>
+					</li>
+					<li>
+						<a href="#">食品</a>
+					</li>
+					<li>
+						<a href="#">热门推荐</a>
+					</li>
+					<li>
+						<a href="#">京东超市</a>
+					</li>
+					<li>
+						<a href="#">手机</a>
+					</li>
+					<li>
+						<a href="#">平板</a>
+					</li>
+					<li>
+						<a href="#">电脑</a>
+					</li>
+					<li>
+						<a href="#">服装</a>
+					</li>
+					<li>
+						<a href="#">食品</a>
+					</li>
+				</ul>
+				
+				<div class="list ">
+					<!--1-->
+					<div class="list-sun ">
+						<div class="banner">
+						    <a href="#"><img src="img/banner1.jpg"/></a>
+					    </div>
+				    	<div class="dome clear">
+				    	
+					    	<span class="dome-title left">专场推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp1.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp2.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp3.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    	</dl>
+				        </div>
+				       <div class="dome clear">
+					    	<span class="dome-title left">热门分类</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+				        <div class="dome clear">
+					    	<span class="dome-title left">大牌推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+					    <div class="dome clear">
+					    	<span class="dome-title left">大牌推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+				        <div class="dome clear">
+					    	<span class="dome-title left">大牌推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+				    </div>
+				    <!--1-->
+				    <!--2-->
+				    <div class="list-sun ">
+						<div class="banner">
+						     <a href="#"><img src="img/banner2.jpg"/></a>
+					    </div>
+				    	<div class="dome clear">
+				    	
+					    	<span class="dome-title left">专场推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp1.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp2.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp3.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    	</dl>
+				        </div>
+				       <div class="dome clear">
+					    	<span class="dome-title left">热门分类</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+				        <div class="dome clear">
+					    	<span class="dome-title left">大牌推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+					    
+				    </div>
+					   <!-- 2-->
+					    <!--3-->
+				    <div class="list-sun ">
+						<div class="banner">
+						     <a href="#"><img src="img/banner3.jpg"/></a>
+					    </div>
+				    	<div class="dome clear">
+				    	
+					    	<span class="dome-title left">专场推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp1.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp2.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp3.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    	</dl>
+				        </div>
+				       <div class="dome clear">
+					    	<span class="dome-title left">热门分类</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+				        <div class="dome clear">
+					    	<span class="dome-title left">大牌推荐</span>
+					    	<dl class="left clear">
+					    		<dd><a href="#"><img src="img/cp4.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp5.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp6.jpg"/><p>乐中秋惠国庆</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp7.jpg"/><p>926生鲜超级品类日</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp8.jpg"/><p>阳澄湖大闸蟹</p></a></dd>
+					    		<dd><a href="#"><img src="img/cp9.jpg"/><p>乐中秋惠国
+					    	</dl>
+				        </div>
+					    
+				    </div>
+				   <!--3-->
+				    
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+			
+			var offsetTop = 0;
+			
+			$(".category ul").on({
+				startY: 0,
+				touchstart: function(e) {
+					this.startY = e.originalEvent.changedTouches[0].pageY;
+				},
+				touchend: function(e) {
+					var y = e.originalEvent.changedTouches[0].pageY;
+					offsetTop = offsetTop + y-this.startY;
+					
+					if(offsetTop>0){
+						offsetTop = 0;
+						$(".category ul").animate({top:"0px"},300);
+					}
+					
+					if($(".category").height()-$(".top").height()-$(".category ul").height()>offsetTop){
+						offsetTop = $(".category").height()-$(".top").height()-$(".category ul").height();
+						$(".category ul").animate({top:offsetTop+"px"},300);
+					}
+				},
+				touchmove: function(e) {
+					var y = e.originalEvent.changedTouches[0].pageY;
+					var offset = offsetTop +  y-this.startY;
+					var  h = $(".category").height()-($(".category ul").height()+offset);
+					
+					if( $(".category").height()-$(".top").height()-$(".category ul").height()-150>offset){
+						offset = $(".category").height()-$(".top").height()-$(".category ul").height()-150;
+					}
+					
+					offset = offset>150?150:offset;
+					
+					$(".category ul").css("top",offset+"px");
+				}
+			});
+			
+			
+			
+			
+			/****list****/
+			var offsetTop = 0;
+			
+			$(".category .list").on({
+				startY: 0,
+				touchstart: function(e) {
+					this.startY = e.originalEvent.changedTouches[0].pageY;
+				},
+				touchend: function(e) {
+					var y = e.originalEvent.changedTouches[0].pageY;
+					offsetTop = offsetTop + y-this.startY;
+					
+					if(offsetTop>0){
+						offsetTop = 0;
+						$(".category .list-sun").animate({top:"0px"},300);
+					}
+					
+					if($(".category").height()-$(".top").height()-$(".category .list-sun").height()>offsetTop){
+						offsetTop = $(".category ").height()-$(".top").height()-$(".category .list-sun").height();
+						$(".category .list-sun").animate({top:offsetTop+"px"},300);
+					}
+				},
+				touchmove: function(e) {
+					var y = e.originalEvent.changedTouches[0].pageY;
+					var offset = offsetTop +  y-this.startY;
+					var  h = $(".category").height()-($(".category .list-sun").height()+offset);
+					
+					if( $(".category").height()-$(".top").height()-$(".category .list-sun").height()-150>offset){
+						offset = $(".category").height()-$(".top").height()-$(".category .list-sun").height()-150;
+					}
+					
+					offset = offset>150?150:offset;
+					
+					$(".category .list-sun").css("top",offset+"px");
+				}
+			});
+			
+			
+			
+			/***qiehuan**/
+			
+			$(".category ul li").on("touchstart",function(){
+				var index = $(this).index();
+				
+				$(".category ul li").removeClass("active").eq(index).addClass("active");
+				$(".category .list-sun").hide().eq(index).show();
+			
+			});
+			
+		</script>
+
+	</body>
+
+</html>

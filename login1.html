@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			.clear:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.left{
+				float: left;
+			}
+			.right{
+				float: right;
+			}
+			input{outline: none;}
+			
+			html{
+				/**
+				 * 1rem = 100px
+				 * */
+				font-size: calc(100vw/6.4);
+			}
+			body{
+				margin: 0;
+			}
+			.w{
+				width: 5.62rem;
+				font-size: 0.27rem;
+				margin: 0 auto;
+			}
+			.top-bar{
+				width: 100%;
+				height: 0.88rem;
+				line-height: 0.88rem;
+				font-size: 0.32rem;
+				background-color: #f9f9f9;
+				text-align: center;
+				color: #616161;
+				border-bottom: solid 1px #bbbbbb;
+			}
+			.top-bar .back{
+				float: left;
+				display: block;
+				width: 0.24rem;
+				height: 0.4rem;
+				padding-top: 0.12rem;
+				padding-left:0.31rem ;
+				
+			}
+			.back img{
+				width: inherit;
+				height: inherit;
+			}
+			.contater{
+				font-size: 0.27rem;
+				width: 100%;
+				height: 0.9rem;
+				line-height: 0.9rem;
+				border-bottom: 1px solid #D7D7D7;
+			}
+			.login-con{
+				margin: 0 auto;
+				height: inherit;
+			}
+			.login-con span:first-child{
+				border-bottom: 2px solid red;
+				
+			}
+			.login-con span.active{
+				border-bottom: 2px solid red;
+				
+			}
+			.user,.pwd{
+				width: inherit;
+				height: 0.9rem;
+				line-height: 0.9rem;
+				padding-left: 10px;
+				border-bottom: 1px solid #D7D7D7;
+				
+			}
+			.user input,.pwd input{
+				
+				margin-left: 0.67rem;
+				width: 3rem;
+				height: 0.6rem;
+				border: none;
+				color: #CFCCCC;
+				font-size: 0.2rem;
+			}
+			.btn{
+				margin-top: 0.45rem;
+				border-radius: 10px;
+			}
+			.btn button{
+				height: 0.9rem;	
+			}
+			.btn button:first-child{
+				border: none;
+			}
+			.btn button:last-child{
+				margin-top: 0.2rem;
+				border: 1px solid red;
+				;
+				background: none;
+				color: red;
+			}
+			.register{
+				margin-top: 0.5rem;
+			}
+			.register a{
+				text-decoration: none;
+				color: #333333;
+			}
+			.register a:first-child{
+				background: url(img/lock.jpg) no-repeat left center;
+				background-size: 0.3rem 0.32rem;
+				padding-left: 0.5rem;
+			}
+			.register a:last-child{
+				background: url(img/mobile.jpg) no-repeat left top;
+				background-size: 0.29rem 0.35rem;
+				padding-left: 0.5rem;
+			}
+			.other{
+				margin-top: 1.99rem;
+			}
+			.other span:first-child,.other span:last-child{
+				display: block;
+				width: 1.62rem;
+				height: 0.27rem;
+				border-bottom: 1px solid #D7D7D7;
+			}
+			.other span:nth-child(2){
+				margin-left: 0.31rem;
+				color: #D7D7D7;
+			}
+			.link{
+				margin-top: 0.8rem;
+			}
+			.link a:first-child{
+				display: inline-block;
+				width: 0.51rem;
+				height: 0.46rem;
+				margin-left: 1.64rem;
+			}
+			
+			.link a:last-child{
+				display: inline-block;
+				width: 0.5rem;
+				height: 0.46rem;
+				margin-right: 1.64rem;
+			}
+			.link a img{
+				width: inherit;
+				height: inherit;
+			}
+			.deal{
+				margin-top: 0.66rem;
+				text-align: center;
+				font-size: 0.32rem;
+				padding-bottom: 0.58rem;
+			}
+			.deal a{
+				
+				color: #333333;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-bar">
+			<span class="back"><img src="img/back.jpg"/></span>
+			<span class="title">京东登录</span>
+		</div>
+		<div class="contater">
+			<div class="login-con w clear">
+				<span class="left">帐号密码登录</span>
+				<span class="right">短信验证码登录</span>
+			</div>
+		</div>
+		<div class="w clear">
+			<div class="user left">
+				<span>帐号</span>
+				<input type="text" value="用户名/邮箱/已验证手机" />
+				
+			</div>
+			<div class="pwd left">
+				<span>密码</span>
+				<input type="password" value="" placeholder="请输入密码"/>
+				
+			</div>
+			
+		</div>
+		<div class="btn w">
+			<button class="w">登录</button></br>
+			<button class="w">一键登录</button>
+		</div>
+		<div class="w">
+			<div class="clear register">
+				<a href="#" class="left">忘记密码</a>
+				<a href="register.html" class="right">手机快速注册</a>
+		    </div>
+		    <div class="other ">
+		    	<div class="clear">
+		    		<span class="left"></span>
+		    	    <span class="left">其他登陆方式</span>
+		    	    <span class="right"></span>
+		    	</div>
+		    	<div class="link clear">
+			    	<a href="#" class="left"><img src="img/qq.jpg"/></a>
+			    	<a href="#" class="right"><img src="img/wechat.jpg"/></a>
+			    	
+		        </div>
+		        <div class="deal">登陆即代表您已同意<a href="#">京东隐私政策</a></div>
+		    </div>
+		    
+		</div>
+		
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".login-con span").click(function(){
+				for(var i=0;i<$(this).length;i++)
+				$(this).eq(i).addClass(".active");
+			})
+		</script>
+	</body>
+</html>
